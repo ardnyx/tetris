@@ -17,11 +17,11 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 ![image](https://github.com/ardnyx/tetris/assets/86859621/2d06fcea-6dd2-4d49-a358-2220d0feb42c)
 <b>Workaround:</b> For Windows based OS, Press Ctrl - to zoom out. For MacOS, Cmd - to zoom out.
 
-## The Team
+## The Team, MJ's Servants
+Quilatan, Marcis Joseph - Team Leader, and Time Trial & Reversed Flex Mod Developer <br>
 Tagle, Jel Kyann - Layout and Design Artist, Programmer, and Team Leader <br>
 Leyesa, Dann Martin (<b>ardnyx</b>) - Lead Developer and Control Manager <br>
 Diazana, Darren - Design and Concept Artist <br>
-Quilatan, Marcis Joseph - Time Trial and Reversed Flex Mod Developer <br>
 De Gula, Kerby Brent - Flashlight Mod Developer <br>
 Mercado, Nico - Chromatic Cascade Mod Developer <br>
 Samaco, Cyrus - Features Developer
