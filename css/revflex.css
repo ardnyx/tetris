@@ -1,0 +1,104 @@
+body {
+    background-color: #340557;
+}
+
+.main-body {
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-one h1 {
+    color: #e3e3e3;
+    font-size: 75px;
+}
+
+.complex-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.complex-desc h2 {
+    color: #d29df9;
+}
+
+.complex-desc p {
+    color: #aea3b6;
+    font-weight: 700;
+}
+
+.box {
+    border: 1.3px solid #5c0b97;
+    display: flex;
+    background-color: #210437;
+    color: white;
+    width: 65%;
+    height: 190px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.box h3 {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.box h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.back-start{
+    display: flex;
+    width: 65%;
+    gap: 70px;
+    margin-top: -14px;
+}
+
+.back, .start {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #210437;
+    color: white;
+    height: 90px;
+    align-items: center;
+    border: 1px solid #5c0b97;
+    cursor: pointer;
+
+}
+
+.back:hover, .start:hover {
+   
+    background-color: #340557;
+    
+}
+
+.back:active, .start:active {
+   
+    background-color: #4a067e;
+    
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.start, .back {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite; /* Adjust duration and other animation properties as needed */
+}

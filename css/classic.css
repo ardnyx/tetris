@@ -1,0 +1,89 @@
+body {
+    background-color: #210437;
+}
+
+.main-body {
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-one h1 {
+    color: #e3e3e3;
+    font-size: 75px;
+}
+
+.box {
+    border: 1.3px solid #32459c;
+    display: flex;
+    background-color: #15295a;
+    color: white;
+    width: 65%;
+    height: 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.box h3 {
+    color: #adb1bb;
+    text-align: center;
+    width: 70%;
+}
+
+.box h1 {
+    font-size: 76px;
+    text-align: center;
+}
+
+.back-start{
+    display: flex;
+    width: 65%;
+    gap: 70px;
+    margin-top: -14px;
+}
+
+.back, .start {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #15295a;
+    color: white;
+    height: 90px;
+    align-items: center;
+    border: 1.3px solid #32459c;
+    cursor: pointer;
+}
+
+.back:hover, .start:hover{
+    background-color: #243d7c;
+    width: 60%;
+    height: 100px;
+
+}
+
+.back:active, .start:active{
+    background-color: #3956a0;
+    width: 60%;
+    height: 100px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.back, .start {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite; /* Adjust duration and other animation properties as needed */
+}

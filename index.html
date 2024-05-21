@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="icon" href="../assets/tetris-personalized-logo.png">
+    <script src="../audio/audioManager.js" defer></script>
+</head>
+<body style="background-color: #6A0DAD;">
+
+    <!-- BG MUSIC-->
+   
+    <div class="main-body">   
+        <div class="tetrimino tetrimino1" style="left: 10%; top: -10%;"></div>
+        <div class="tetrimino tetrimino2" style="left: 25%; top: -10%;"></div>
+        <div class="tetrimino tetrimino3" style="left: 40%; top: -10%;"></div>
+        <div class="tetrimino tetrimino4" style="left: 55%; top: -10%;"></div>
+        <div class="tetrimino tetrimino5" style="left: 70%; top: -10%;"></div>
+        <div class="tetrimino tetrimino6" style="left: 85%; top: -10%;"></div>
+        <div class="tetrimino tetrimino7" style="left: 100%; top: -10%;"></div>
+        <img src="../assets/bg.png" alt="" class="top-pic"> 
+        <img id="center-logo" src="../assets/nico_logo.png" alt="" class="center-logo">
+    </div>
+
+    <a href="game-mode.html"><button class="play-but" style="margin-left: -6%; margin-top: -2%;">PLAY</button></a>
+
+    <button class="down-button" onclick="scrollToAbout()">V</button>
+    
+    <header class="header">
+        <a href="home.html"><img src="../assets/tetris-personalized-logo.png" alt="" srcset=""></a>
+        
+        <nav class="navbar">
+            <a href="#" id="homeLink">HOME</a>
+            <a href="#" id="aboutLink">ABOUT</a>
+            <a href="#" id="contactLink">CONTACT</a>
+            <div class="nav-item">
+                <a href="game-mode.html" class="play">PLAY</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="second-body">   
+        <img src="../assets/About.png" alt="" class="about-icon">
+        <div  class="upper-content">
+            <center><h2>About</h2></center>
+            <br>
+        </div>
+        <div class="lower-content">
+            <center>
+                <br>
+                <p>Embark on a timeless journey of spatial strategy and <br> 
+                    exhilarating challenge with our Tetris game! Immerse yourself in <br>
+                    the iconic world of falling Tetriminos, where quick thinking and <br>
+                    precision are your greatest allies.</p>
+                    <br>
+                <p>Challenge yourself to reach new heights, compete against <br>
+                    friends and rivals, and become the ultimate Tetris champion. Are <br>
+                    you ready to embrace the challenge and shape your destiny, one <br>
+                     block at a time?</p>
+            </center>
+        </div>
+    </div>
+
+    <div class="third-body">
+        <img src="../assets/third-bg.png" alt="">
+        <center>
+        <div class="third-upper-content">
+            <h2 style="font-size: 60px;">Contact Us</h2>
+            <h3 style="font-size: 20px; margin-top: 1%; color: #D29DF9;">Have any inquiries? Get in touch with us.</h3>
+        </div>
+        <div class="third-lower-content">
+            <p style="margin-right: 8.8%; margin-left: 1%;">900 San Marcelino St </p>
+            <p style="margin-right: 8.5%;">(555) 867-5309  </p>       
+            <p>support@tetrisgame.com</p>
+            <div class="icons">
+            <img src="../assets/5.png" style="width: 200px; margin-left: -21%; height: 125.97px; margin-top: -4%;" >
+            <img src="../assets/7.png" style="width: 200px;  margin-left: 10.5%;height: 125.97px; margin-top: -8.5%; ">
+            <img src="../assets/6.png" style="width: 200px; margin-left: 3%; height: 125.97px; margin-top: -8.5%;">
+            </div>
+        </div>
+    </center>
+    </div>
+</body>
+<script>
+
+let isSpinning = false;
+
+document.addEventListener("DOMContentLoaded", function() {
+    const centerLogo = document.getElementById("center-logo");
+    centerLogo.addEventListener("click", function() {
+        if (!isSpinning) {
+            centerLogo.style.animation = "rotate 1s linear infinite"; // Apply the rotation animation
+            isSpinning = true;
+        } else {
+            centerLogo.style.animation = "drop 1s linear"; // Apply the drop animation
+            isSpinning = false;
+        }
+    });
+});
+    function scrollToPosition(position) {
+        window.scrollTo({
+            top: position,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollToAbout() {
+        window.scrollTo({
+            top: 850,
+            behavior: 'smooth'
+        });
+
+        var downButton = document.querySelector('.down-button');
+        downButton.removeEventListener('click', scrollToAbout);
+        
+        downButton.addEventListener('click', scrollToAnotherPosition);
+    }
+
+    function scrollToAnotherPosition() {
+        window.scrollTo({
+            top: 1850,
+            behavior: 'smooth'
+        });
+        
+        var downButton = document.querySelector('.down-button');
+        downButton.removeEventListener('click', scrollToAnotherPosition);
+    }
+
+    document.getElementById('homeLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scrollToPosition(0); 
+    });
+    
+    document.getElementById('aboutLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scrollToPosition(850); 
+    });
+
+    document.getElementById('contactLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        scrollToPosition(1850); 
+    });
+
+
+    
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mode</title>
+    <link rel="stylesheet" href="../css/choose-gamemode.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="icon" href="../assets/tetris-personalized-logo.png">
+    <script src="../audio/audioManager.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="home.html"><img src="../assets/tetris-personalized-logo.png" alt="" srcset=""></a>
+        
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="#about" id="aboutLink">ABOUT</a>
+            <a href="#contact" id="contactLink">CONTACT</a>
+            <div class="nav-item">
+                <a href="#" class="play">PLAY</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-body">
+        
+        <div class="container-one">
+            <h1>- Select Game Mode -</h1>
+        </div>
+        <div class="classic container" onclick="ToClassic()">
+            <h2 class="title">CLASSIC</h2>
+            <p>Create complete horizontal lines and prevent the stack from reaching the top of the screen.</p>
+        </div>
+        <div class="complex container" onclick="ToComplex()">
+            <h2 class="title">COMPLEX MODES</h2>
+            <p>Additional challenges to add layers of strategy and excitement to the gameplay experience.</p>
+        </div>
+        <hr>
+    </div>
+    <script>
+        function ToClassic() {
+            window.location.href = "classic-mode.html"
+        }
+
+        function ToComplex() {
+            window.location.href = "select-complex.html"
+        }
+
+        document.getElementById('aboutLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+
+        document.getElementById('contactLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+</html>

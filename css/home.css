@@ -1,0 +1,322 @@
+body {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    overflow-x: hidden; 
+}
+
+.header {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;}
+
+.top-pic {
+    width: 105%;
+    height: auto;
+    margin-top: -36%;
+    margin-left: -50%;
+    position: absolute;
+    
+}
+
+.second-body {
+  width: 105%;
+  height: 907.7px;
+  background-color: #210437;
+  position: absolute;
+  margin-top: 116%;
+  margin-left: 1.8%;
+}
+
+.third-body {
+  width: 100%;
+  height: 907.7px;
+  background-color: #6a0dad;
+  position: absolute;
+  margin-top: 243%;
+  margin-left: -2.2%;
+  color: #f2ebeb;
+}
+
+.center-logo {
+    position: absolute;
+    z-index: 100;
+    margin-left: -21%;
+    margin-top: -23%;
+    width: 45%;
+    height: auto;
+    cursor: pointer;
+}
+
+.center-logo:hover {
+    width: 60%; 
+    margin-left: -29%;
+    margin-top: -23%;
+}
+
+.play-but {
+    z-index: 150;
+    position: absolute;
+    background-color: #6A0DAD; 
+    border: 2px solid #f2ebeb; 
+    border-radius: 30px; 
+    padding: 1.5% 6%; 
+    color: #f2ebeb;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.play-but:hover {
+    background-color: #9938d1; 
+    cursor: pointer;
+
+}
+
+.play-but:active {
+    background-color: #8b4be0; 
+}
+
+.about-icon {
+    z-index: 0;
+    margin-top: 0%;
+    position: absolute;
+}
+
+.lower-content, .upper-content {
+    z-index: 101;
+    color: #f2ebeb;
+}
+
+.lower-content {
+margin-top: 0%;
+font-size: 22px;
+font-weight: 500;
+}
+
+.upper-content {
+margin-top: 13%;
+font-size: 50px;
+}
+
+.third-upper-content {
+margin-top: -32%;
+}
+
+.third-lower-content {
+margin-top: 8%;
+display: flex;
+margin-left: 28%;
+color: #D29DF9;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    height: 125.97px;
+}
+
+.down-button {
+    position: fixed;
+    bottom: 30px;
+    right: 1%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: #6A0DAD;
+    border-color: #f2ebeb;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    border-style: solid;
+}
+
+.down-button:hover {
+    background-color: #580b8f;
+    color: #dddada;
+    border-color: #f2ebebd6;
+
+
+}
+
+.down-button:active {
+    background-color: #440770;
+    color: #dddadaa7;
+    border-color: #f2ebeba6;
+
+
+}
+
+.music {
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.play-but {
+    z-index: 150;
+    position: absolute;
+    background-color: #6A0DAD; 
+    border: 2px solid #f2ebeb; 
+    border-radius: 30px; 
+    padding: 1.5% 6%; 
+    color: #f2ebeb;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.play-but:hover {
+    background-color: #9938d1; 
+    cursor: pointer;
+    transform: scale(1.2); /* Scales the button to 120% */
+}
+
+
+
+.play:active {
+    background-color: #9943d6;
+}
+
+@keyframes drop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(200vh); }
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .tetrimino {
+    position: absolute;
+    opacity: 0.8;
+    animation: fall 10s linear infinite;
+    cursor: pointer; /* Add cursor pointer for better indication */
+  }
+  
+  .tetrimino1 { /* Line */
+    background: #4b245a; /* Purple */
+    width: 50px;
+    height: 200px;
+  }
+  
+  .tetrimino2 { /* Square */
+    background: #8e44ad; /* Darker Purple */
+    width: 100px;
+    height: 100px;
+  }
+  
+  .tetrimino3 { /* T-shape */
+    background: #4f106a; /* Even Darker Purple */
+    width: 150px;
+    height: 50px;
+  }
+  
+  .tetrimino3::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #4f106a;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+  }
+  
+  .tetrimino4 { /* L-shape */
+    background: #6c3483; /* Darkest Purple */
+    width: 50px;
+    height: 150px;
+  }
+  
+  .tetrimino4::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #6c3483;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+  
+  .tetrimino5 { /* J-shape */
+    background: #3a0f4c; /* Very Dark Purple */
+    width: 50px;
+    height: 150px;
+  }
+  
+  .tetrimino5::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #3a0f4c;
+    position: absolute;
+    top: 0;
+    left: -50px;
+  }
+  
+  .tetrimino6 { /* Z-shape */
+    background: #7d3c98; /* Even Darker Purple */
+    width: 150px;
+    height: 50px;
+  }
+  
+  .tetrimino6::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #7d3c98;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+  }
+  
+  .tetrimino7 { /* S-shape */
+    background: #3a0f4c; /* Deepest Purple */
+    width: 100px;
+    height: 50px;
+  }
+  
+  .tetrimino7::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #3a0f4c;
+    position: absolute;
+    top: 0;
+    left: -50px;
+  }
+  
+  .tetrimino:nth-child(odd) {
+    animation-duration: 5s;
+  }
+  .tetrimino:nth-child(even) {
+    animation-duration: 7s;
+  }
+  
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Modes</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/selcomplex.css">
+    <link rel="icon" href="../assets/tetris-personalized-logo.png">
+    <script src="../audio/audioManager.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html"><img src="../assets/tetris-personalized-logo.png" alt="" srcset=""></a>
+        
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="home.html">ABOUT</a>
+            <a href="home.html">CONTACT</a>
+            <div class="nav-item">
+                <a href="game-mode.html" class="play">PLAY</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-body">
+        <div class="container-one">
+            <h1>- Select Game Mode -</h1>
+        </div>
+
+        <div class="complex-desc">
+            <h2>COMPLEX</h2>
+            <p>Additional challenges to add layers of strategy to the gameplay experience</p>
+        </div>
+
+        <div class="row">
+            <div class="first" onclick="TimeTrial()">
+                <h1>TIME TRIAL</h1>
+                <p>Race against the clock to clear as many lines as possible within a set time limit. <b>Ghostblocks are disabled.</b></p>
+            </div>
+            <div class="second" onclick="Flashlight()">
+                <h1>FLASHLIGHT</h1>
+                <p>Plunged into darkness, relying solely on the illumination provided by their mouse cursor to reveal the immediate vicinity. <b>Ghostblocks are disabled.</b></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="first" onclick="Cascade()">
+                <h1>CHROMATIC CASCADE</h1>
+                <p>Navigate through a constantly shifting colors, where Tetriminos change hues as they fall. <b>Ghostblocks are disabled.</b></p>
+            </div>
+            <div class="second" onclick="ReverseFlex()">
+                <h1>REVERSED FLEX</h1>
+                <p>Contend with a topsy-turvy world where left is right and up is down, as traditional controls are flipped on their head. <b>Ghostblocks are enabled.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function TimeTrial() {
+            window.location.href = "timetrial.html"
+        }
+
+        function Cascade() {
+            window.location.href = "cascade.html"
+        }
+
+        function Flashlight() {
+            window.location.href = "flashlight.html"
+        }
+
+        function ReverseFlex() {
+            window.location.href = "reverse-flex.html"
+        }
+    </script>
+</body>
+</html>
