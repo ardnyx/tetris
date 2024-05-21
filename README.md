@@ -17,6 +17,13 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 ![image](https://github.com/ardnyx/tetris/assets/86859621/2d06fcea-6dd2-4d49-a358-2220d0feb42c)
 <b>Workaround:</b> For Windows based OS, Press Ctrl - to zoom out. For MacOS, Cmd - to zoom out.
 
+## Missing Features
+### Hold
+The hold feature proved to be a challenge. One of the challeneges in implementing this feature was clearing out the current tetromino from the place where the hold was initiated.
+
+### Next Tetrominoes
+In the recent versions of tetris, you can see what the current tetrominoes are upcoming next. Due to the nature of the Math.random method, we could not formulate the logic to show the upcoming "n" tetrominoes using the method.
+
 ## The Team, MJ's Servants
 Quilatan, Marcis Joseph - Team Leader, and Time Trial & Reversed Flex Mod Developer <br>
 Tagle, Jel Kyann - Programmer and Lead Design Artist <br>
