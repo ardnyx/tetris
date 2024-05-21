@@ -19,7 +19,7 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 
 ## The Team, MJ's Servants
 Quilatan, Marcis Joseph - Team Leader, and Time Trial & Reversed Flex Mod Developer <br>
-Tagle, Jel Kyann - Layout and Design Artist, Programmer, and Team Leader <br>
+Tagle, Jel Kyann - Programmer and Lead Design Artist <br>
 Leyesa, Dann Martin (<b>ardnyx</b>) - Lead Developer and Control Manager <br>
 Diazana, Darren - Design and Concept Artist <br>
 De Gula, Kerby Brent - Flashlight Mod Developer <br>
