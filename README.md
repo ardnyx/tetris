@@ -16,10 +16,10 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 <b>Workaround:</b> For Windows based OS, Press Ctrl - to zoom out. For MacOS, Cmd - to zoom out.
 
 ## The Team
-Tagle, Jel Kyann - Layout and Design Artist, Programmer, and Team Leader
-Leyesa, Dann Martin - Lead Developer
-Diazana, Darren - Design and Concept Artist
-Quilatan, Marcis Joseph - Time Trial and Reversed Flex Mod Developer
-De Gula, Kerby Brent - Flashlight Mod Developer
-Mercado, Nico - Chromatic Cascade Mod Developer
+Tagle, Jel Kyann - Layout and Design Artist, Programmer, and Team Leader <br>
+Leyesa, Dann Martin - Lead Developer <br>
+Diazana, Darren - Design and Concept Artist <br>
+Quilatan, Marcis Joseph - Time Trial and Reversed Flex Mod Developer <br>
+De Gula, Kerby Brent - Flashlight Mod Developer <br>
+Mercado, Nico - Chromatic Cascade Mod Developer <br>
 Samaco, Cyrus - Features Developer
