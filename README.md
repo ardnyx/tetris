@@ -1,4 +1,7 @@
 # Tetris
+
+Live website: https://ardnyx.github.io/tetris/
+
 A custom-made classic tetris + 4 different complex gamemodes. Currently, the website is not available for mobile and it is not meant to be played in it (for now). If there are any issues (aside from the ones that are stated below), please open an issue in the "Issues" tab. You can also open suggestions and advices in this tab, not just issues. As of now, the website still suffers from a few styling issues provided below, and their workarounds: 
 
 ## Issues
