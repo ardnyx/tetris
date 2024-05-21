@@ -14,3 +14,12 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 ### Scrollable Gameplay Layout
 ![image](https://github.com/ardnyx/tetris/assets/86859621/2d06fcea-6dd2-4d49-a358-2220d0feb42c)
 <b>Workaround:</b> For Windows based OS, Press Ctrl - to zoom out. For MacOS, Cmd - to zoom out.
+
+## The Team
+Tagle, Jel Kyann - Layout and Design Artist, Programmer, and Team Leader
+Leyesa, Dann Martin - Lead Developer
+Diazana, Darren - Design and Concept Artist
+Quilatan, Marcis Joseph - Time Trial and Reversed Flex Mod Developer
+De Gula, Kerby Brent - Flashlight Mod Developer
+Mercado, Nico - Chromatic Cascade Mod Developer
+Samaco, Cyrus - Features Developer
