@@ -24,6 +24,9 @@ The hold feature proved to be a challenge. One of the challeneges in implementin
 ### Next Tetrominoes
 In the recent versions of tetris, you can see what the current tetrominoes are upcoming next. Due to the nature of the Math.random method, we could not formulate the logic to show the upcoming "n" tetrominoes using the method.
 
+### Responsiveness and Movement Snap
+If you've observed in tetr.io and jstris, when you move a tetromino left or right, the key immediately "responds", like there's a snap. In our version of tetris, you need to hold the left/right keys for about ~~ a second before it registers as a hold. Again, limited by our knowledge as beginners. Because of this, fast and quick plays aren't possible, and you will have a hard time in the Chromatic Cascade mode at higher levels, where the tetrominoes drop faster. 
+
 ## The Team, MJ's Servants
 Quilatan, Marcis Joseph - Team Leader, and Time Trial & Reversed Flex Mod Developer <br>
 Tagle, Jel Kyann - Programmer and Lead Design Artist <br>
