@@ -2,7 +2,7 @@
 
 ![nico_logo](https://github.com/ardnyx/tetris/assets/86859621/b304376c-361f-4569-8591-40af96745928)
 
-Live website: https://ardnyx.github.io/tetris/
+Play here: https://ardnyx.github.io/tetris/
 
 <b>Note: </b> If one of the game modes load really slow, try restarting the page, loading a different game mode, or playing classic first. 
 
