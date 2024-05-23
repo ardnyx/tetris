@@ -19,7 +19,7 @@ A custom-made classic tetris + 4 different complex gamemodes. Currently, the web
 
 ## Missing Features
 ### Hold
-The hold feature proved to be a challenge. One of the challeneges in implementing this feature was clearing out the current tetromino from the place where the hold was initiated.
+The hold feature proved to be a challenge. We actually "did" manage to implement the hold feature, but one of the challeneges in implementing this feature was clearing out the current tetromino from the place where the hold was initiated. When the "C" key was clicked, it would hold the tetromino, but at the same time, that same tetromino would be stuck at the position where we started the hold, and it would only disappear once a tetromino got into its way. It was weird and we cannot fix it, possibly due to the structure of the tetris gameplay itself not being friendly to feature addition.
 
 ### Next Tetrominoes
 In the recent versions of tetris, you can see what the current tetrominoes are upcoming next. Due to the nature of the Math.random method, we could not formulate the logic to show the upcoming "n" tetrominoes using the method.
