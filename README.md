@@ -26,12 +26,3 @@ In the recent versions of tetris, you can see what the current tetrominoes are u
 
 ### Responsiveness and Movement Snap
 If you've observed in tetr.io and jstris, when you move a tetromino left or right, the key immediately "responds", like there's a snap. In our version of tetris, you need to hold the left/right keys for about ~~ a second before it registers as a hold. Again, limited by our knowledge as beginners. Because of this, fast and quick plays aren't possible, and you will have a hard time in the Chromatic Cascade mode at higher levels, where the tetrominoes drop faster. 
-
-## The Team, MJ's Servants
-Quilatan, Marcis Joseph - Team Leader, and Time Trial & Reversed Flex Mod Developer <br>
-Tagle, Jel Kyann - Programmer and Lead Design Artist <br>
-Leyesa, Dann Martin (<b>ardnyx</b>) - Lead Developer and Control Manager <br>
-Diazana, Darren - Design and Concept Artist <br>
-De Gula, Kerby Brent - Flashlight Mod Developer <br>
-Mercado, Nico - Chromatic Cascade Mod Developer <br>
-Samaco, Cyrus - Features Developer
